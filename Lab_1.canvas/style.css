@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputs {
+  margin-bottom: 20px;
+}
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+canvas {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}

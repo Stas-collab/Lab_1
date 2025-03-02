@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trajectory {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 2;
+}
+
+.info-text {
+  font-size: 12px;
+  font-weight: bold;
+}

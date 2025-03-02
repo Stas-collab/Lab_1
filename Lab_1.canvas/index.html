@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моделювання руху матеріальної точки</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <div class="form-group">
+          <label for="x0">Початкова координата x₀ (м):</label>
+          <input type="number" id="x0" value="0" />
+        </div>
+        <div class="form-group">
+          <label for="y0">Початкова координата y₀ (м):</label>
+          <input type="number" id="y0" value="0" />
+        </div>
+        <div class="form-group">
+          <label for="angle">Кут (градуси):</label>
+          <input type="number" id="angle" value="45" min="0" max="90" />
+        </div>
+        <div class="form-group">
+          <label for="velocity">Початкова швидкість (м/с):</label>
+          <input type="number" id="velocity" value="20" min="0" />
+        </div>
+        <div class="form-group">
+          <label for="acceleration">Прискорення (м/с²):</label>
+          <input
+            type="number"
+            id="acceleration"
+            value="9.8"
+            min="0"
+            step="any"
+          />
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="calculate">Розрахувати траєкторію</button>
+        <button id="reset">Скинути</button>
+      </div>
+
+      <canvas id="trajectoryCanvas" width="900" height="500"></canvas>
+
+      <div class="info">
+        <div>
+          <h3>Результати:</h3>
+          <div id="results"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
