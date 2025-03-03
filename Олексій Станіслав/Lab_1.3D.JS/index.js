@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         flightTime = 10;
         maxHeight = y0;
       } else if (v0y > 0) {
-       
         flightTime = 10;
         maxHeight = y0 + v0y * flightTime;
       } else {
